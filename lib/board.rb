@@ -36,6 +36,8 @@ class Board
   def taken?
     if @ cells = "X" || "O"
       return true
+    end
+  end
   
   
 end
