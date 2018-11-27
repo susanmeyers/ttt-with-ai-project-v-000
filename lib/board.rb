@@ -30,17 +30,7 @@ class Board
   end
   
   def turn_count
-    array = @cells.select.count {|element| element == "X" || element == "O"}
-    binding.pry
-    
-    
-  
-    
-   
-   
-   
-    # turns = turns  + 1
-  
+    @cells.select.count {|element| element == "X" || element == "O"}
  end
   
   
