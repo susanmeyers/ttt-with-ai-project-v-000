@@ -31,7 +31,11 @@ class Board
   
   def turn_count
     @cells.select.count {|element| element == "X" || element == "O"}
- end
+  end
+  
+  def taken?
+    if @ cells = "X" || "O"
+      return true
   
   
 end
