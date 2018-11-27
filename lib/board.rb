@@ -22,9 +22,26 @@ class Board
   end
   
   def position(input)
-      @cells
-      
-    
+    @cells[input.to_i-1]
   end
+  
+  def full?
+    @cells.all? {|space| space != " " }
+  end
+  
+  def turn_count
+    array = @cells.find.collect {|element| element == "X" || element == "O"}
+    binding.pry
+    
+    
+  
+    
+   
+   
+   
+    # turns = turns  + 1
+  
+ end
+  
   
 end
