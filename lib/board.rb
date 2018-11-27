@@ -36,7 +36,7 @@ class Board
   def taken?(position)
     @cells == "X" || @cells == "O"
       
-    end
+  
   end
   
   
