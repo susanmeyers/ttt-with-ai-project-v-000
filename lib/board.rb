@@ -22,9 +22,24 @@ class Board
   end
   
   def position(input)
-      @cells
-      
-    
+    @cells[input.to_i-1]
   end
+  
+  def full?
+    @cells.all? {|space| space != " " }
+  end
+  
+  def turn_count
+    @cells.select.count {|element| element == "X" || element == "O"}
+  end
+  
+  def taken?(position)
+    @cells
+      return true
+    end
+      
+  
+  end
+  
   
 end
