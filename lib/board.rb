@@ -33,8 +33,8 @@ class Board
     @cells.select.count {|element| element == "X" || element == "O"}
   end
   
-  def taken?(position)
-    @cells == "X" || @cells == "O"
+  def taken?(space)
+    @cells(space) == "X" || @cells(space) == "O"
       
   
   end
