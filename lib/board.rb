@@ -34,7 +34,7 @@ class Board
   end
   
   def taken?
-     if @cells == "X" || @ cells == "O"
+     if @cells = "X" || @cells = "O"
       return true
     end
   end
