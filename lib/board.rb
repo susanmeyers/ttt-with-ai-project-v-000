@@ -33,9 +33,9 @@ class Board
     @cells.select.count {|element| element == "X" || element == "O"}
   end
   
-  def taken?
-     if @cells = "X" || @cells = "O"
-      return true
+  def taken?(cells)
+     if @cells == "X" || @cells == "O"
+       return true
     end
   end
   
