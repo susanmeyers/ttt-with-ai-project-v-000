@@ -34,7 +34,8 @@ class Board
   end
   
   def taken?(space)
-    @cells(space) == "X" || @cells(space) == "O"
+    if @cells(space) == "X" || @cells(space) == "O"
+      return true
       
   
   end
