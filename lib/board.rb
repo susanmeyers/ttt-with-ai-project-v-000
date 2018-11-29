@@ -23,6 +23,7 @@ class Board
   
   def position(input)
     @cells[input.to_i-1]
+    #binding.pry
   end
   
   def full?
@@ -33,24 +34,41 @@ class Board
     @cells.select.count {|element| element == "X" || element == "O"}
   end
   
-  def taken?(position)
-    if position = "X" || input = "O"
-      position(input)
-    end
-      
-
-   
-      
+  def taken?(space)
+    position(space) != " "
   end
   
+  def valid_move?(input)
+    input >= "1" && input <= "9"
+      
+    # else
+    # position(input) && taken?(input)
+    # end
+    
+    
+  end
 end
+    
+  
+#     # taken?(input)
+#     # binding.pry
+    
+   
+#       # binding.pry
+#       # index.between?(0, 8) && !position_taken?(board, index)
+#       # position_taken?(board, index)
+#   # board[index] != " "
 
-# def position_taken?(board, index)
-#   if board[index] == "X" || board[index] == "O"
-#     true
-#   else
-#     false
 #   end
+  
 # end
-# end
+
+# # def position_taken?(board, index)
+# #   if board[index] == "X" || board[index] == "O"
+# #     true
+# #   else
+# #     false
+# #   end
+# # end
+# # end
 
