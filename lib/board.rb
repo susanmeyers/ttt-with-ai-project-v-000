@@ -34,9 +34,12 @@ class Board
   end
   
   def taken?(position)
-    
-
+    if position = "X" || input = "O"
+      position(input)
     end
+      
+
+   
       
   end
   
@@ -49,3 +52,5 @@ end
 #     false
 #   end
 # end
+# end
+
