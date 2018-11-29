@@ -34,12 +34,9 @@ class Board
   end
   
   def taken?(position)
-    @cells
-      return true
-    end
+    @cells.empty?
       
-  
+      
   end
-  
   
 end
