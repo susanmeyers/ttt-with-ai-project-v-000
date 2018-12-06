@@ -41,7 +41,7 @@ class Board
   def valid_move?(input)
     input >= "1" && input <= "9"
       
-    # else
+    #else
     # position(input) && taken?(input)
     # end
     
